@@ -5,8 +5,11 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 1. What was broken when you started?
 
 - What did the game look like the first time you ran it?
+The first time I ran it, it seemed to be fine with showing me "go lower" when i entered the number 3. There were no bugs I could see like missing text or my answer disappearing or anything like that. The number of attempts also was accurate and lowered accordingly to my first guess.
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
+The first two obvious bugs were that when i entered 2, then 1, it kept telling me to "go lower" even though the minimum
+is supposed to be 1. Further, when I went on the enter 0 and -1, it kept telling me "go lower" even though those numbers should give an error or some message saying "stay within the 1-100 range" since the guesses were out of range. Those were the most obvious errors and I never got around to being able to correctly guess the number.
 
 ---
 

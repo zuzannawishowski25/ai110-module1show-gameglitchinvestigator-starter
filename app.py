@@ -54,7 +54,7 @@ def update_score(current_score: int, outcome: str, attempt_number: int):
             points = 10
         return current_score + points
 
-    if outcome == "Too High":
+    if outcome == "Too High": #FIXME: logic is inverted, when a player guesses higher than expected, should lose points, not win more
         if attempt_number % 2 == 0:
             return current_score + 5
         return current_score - 5
@@ -133,7 +133,7 @@ with col3:
 
 if new_game:
     st.session_state.attempts = 0
-    st.session_state.secret = random.randint(1, 100)
+    st.session_state.secret = random.randint(1, 100) #FIXME : should be (low, high) not (1,100)
     st.success("New game started.")
     st.rerun()
 
