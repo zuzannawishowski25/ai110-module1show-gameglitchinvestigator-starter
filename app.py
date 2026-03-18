@@ -54,7 +54,7 @@ def update_score(current_score: int, outcome: str, attempt_number: int):
             points = 10
         return current_score + points
 
-    if outcome == "Too High": #fixed
+    if outcome == "Too High": #fixed using copilot to ensure consistent penalty regardless of attempt number parity
         if attempt_number % 2 == 0:
             return current_score - 5
         return current_score - 5
@@ -133,7 +133,7 @@ with col3:
 
 if new_game:
     st.session_state.attempts = 0
-    st.session_state.secret = random.randint(low, high) #fixed
+    st.session_state.secret = random.randint(low, high) #fixed using Copilot to ensure new secret is generated
     st.success("New game started.")
     st.rerun()
 
